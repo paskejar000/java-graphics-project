@@ -1,7 +1,8 @@
 import java.lang.Math;
 
 public class Vector extends Coord {
-    // Represents a 2D vector value, inherits the same methods from coordinate but allows for more complex physics calculations.
+    /* Represents a 2D vector value.
+    Inherits the same methods from Coord but allows for more complex physics calculations. */
     private double x;
     private double y;
     
@@ -43,8 +44,6 @@ public class Vector extends Coord {
         double theta = Math.atan2(y, x);
         return theta;
     }
-
-	
 
     public void main(String[] args) {
         // Main method runs test cases for this class

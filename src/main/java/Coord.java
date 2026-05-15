@@ -1,5 +1,5 @@
 public class Coord {
-    /* A coordinate represents a single fixed (x, y) value.*/
+    /* A Coord represents an (x, y) coordinate.*/
 
     // Instance variables
     private double x;
@@ -44,6 +44,6 @@ public class Coord {
 
     public String toString() {
         /* Returns coordinate in String format of "(x, y)" */
-        return "(" + x + "," + y + ")";
+        return "[" + x + "," + y + "]";
     }
 }

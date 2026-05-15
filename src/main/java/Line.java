@@ -1,5 +1,6 @@
-/* A line object represents two connected coordinates.*/
 public class Line {
+    /* A line object represents two connected coordinates.*/
+
     // Instance variables
     private Coord c1;
     private Coord c2;
@@ -32,12 +33,22 @@ public class Line {
         // Set the first coordinate
         c1 = newCoord;
     }
+
     public void setC2(Coord newCoord) {
         // Set the second coordinate
         c2 = newCoord;
     }
-    public void setVisible(boolean newState) {
+
+    public void setVisible(boolean visibilityState) {
         // Set visibility to true or false
-        visibility = newState;
+        visible = visibilityState;
+    }
+
+    // Methods
+    public double length() {
+        /* Returns the length of the line */
+        double a = c1.getX() - c2.getX()
+        double b = c2.getY() - c2.getY()
+        return Math.sqrt((a * a) + (b * b))
     }
 }
